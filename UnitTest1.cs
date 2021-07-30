@@ -123,6 +123,34 @@ namespace CalcTest
             double res = calc.GetDivision(); //act
             Assert.AreEqual(res, 5); //assert
         }
-       
+        [Test]
+        public void div_of_two_integers3()
+        {
+            double a = 1, b = 3;//arrange
+            calc.SetFirstNumber(a);//arrange
+            calc.SetSecondNumber(b);//arrange
+            double res = calc.GetDivision(); //act
+            Assert.AreEqual(res, 0.3); //assert
+        }
+        [Test]
+        public void div_of_two_integers4()
+        {
+            double a = 2, b = 1;//arrange
+            calc.SetFirstNumber(a);//arrange
+            calc.SetSecondNumber(b);//arrange
+            double res = calc.GetDivision(); //act
+            Assert.AreEqual(res, 2); //assert
+        }
+        [Test]
+        public void div_of_two_integers5()
+        {
+            double a = 9, b = 3;//arrange
+            calc.SetFirstNumber(a);//arrange
+            calc.SetSecondNumber(b);//arrange
+            double res = calc.GetDivision(); //act
+            Assert.AreEqual(res, 3); //assert
+        }
+
+
     }
 }
